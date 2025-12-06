@@ -1,0 +1,20 @@
+# MySettingsApp
+
+A simple SwiftUI settings app built for my Mobile App Development course.
+
+The app lets the user customize:
+
+- Theme: Light / Dark Mode toggle
+- Font Size: Slider-controlled text size with live preview
+- Accent Color: Selectable color swatches (pink, blue, green)
+- Live Preview Card: Apple-style card that updates instantly
+
+All selections for theme and font size are saved using **UserDefaults**, so the app remembers the user’s preferences between launches.
+
+## Tech Used
+
+- SwiftUI (`NavigationStack`, `Form`, `Section`, `ZStack`, `VStack`, `HStack`)
+- `@State` for screen-local state
+- `@Binding` to update parent state from child views
+- `UserDefaults` for persistent storage
+- `onAppear` and `onChange` to load/save settings
